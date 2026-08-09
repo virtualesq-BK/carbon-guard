@@ -1,0 +1,9 @@
+- 2026-07-24T12:47:53.182Z — Edit → c:\Users\82103\carbon-guard\apps\web\lib\anthropic.ts
+- 2026-07-24T12:54:29.150Z — Write → c:\Users\82103\carbon-guard\apps\web\lib\ai.ts
+- 2026-07-24T13:23:40.035Z — Write → c:\Users\82103\carbon-guard\apps\web\lib\explain.ts
+- 2026-07-24T13:23:48.825Z — Write → c:\Users\82103\carbon-guard\apps\web\app\api\explain\route.ts
+- 2026-07-24T13:24:08.118Z — Edit → c:\Users\82103\carbon-guard\apps\web\app\demo\page.tsx
+- 2026-07-24T13:24:15.638Z — Edit → c:\Users\82103\carbon-guard\apps\web\app\demo\page.tsx
+- 2026-07-24T13:24:25.137Z — Edit → c:\Users\82103\carbon-guard\apps\web\app\demo\page.tsx
+- 2026-07-24T13:24:40.714Z — Edit → c:\Users\82103\carbon-guard\apps\web\app\audit-ready\page.tsx
+- 2026-07-24T13:24:51.192Z — Edit → c:\Users\82103\carbon-guard\apps\web\app\audit-ready\page.tsx

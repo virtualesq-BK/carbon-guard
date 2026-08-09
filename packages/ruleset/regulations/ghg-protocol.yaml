@@ -1,0 +1,185 @@
+# GHG Protocol Corporate Accounting and Reporting Standard — 조직/운영 경계(Boundary) 및
+# 산정·보고 방법론 참고 자료. CBAM/CCA/CSRD 보고서에서 요구하는 Scope 1/2/3 산정 범위,
+# 기준 연도 재계산, 필수 보고 항목을 정의할 때 참조한다. 배출계수가 아니므로
+# packages/ruleset/factors와는 별개.
+regulation_key: ghg-protocol-corporate-standard
+jurisdiction: international
+version: "revised edition (한국어 번역본 2025-06) + 글로벌 공시기준 Scope1,2 조직경계 사례집(기후에너지환경부·한국환경산업기술원, 2026-02)"
+effective_from: "2004-01-01"
+source_url: "https://ghgprotocol.org/corporate-standard"
+status: draft # 배출계수 승인 대상 룰은 아니나 스키마상 draft로 둠
+
+accounting_principles:
+  relevance: 적합성 — 인벤토리 경계가 사업 관계·경제적 실제를 반영해야 한다.
+  completeness: 완전성 — 선택한 경계 내 모든 배출원을 산정하고, 제외 사항은 공개·소명해야 한다.
+  consistency: 일관성 — 시간 경과 비교가 가능하도록 방법론을 일관 적용하고 변경사항은 투명하게 기록한다.
+  transparency: 투명성 — 가정·방법론·데이터 출처를 감사 추적이 가능하도록 명확히 밝힌다.
+  accuracy: 정확성 — 배출량을 구조적으로 과대·과소 추정하지 않고 불확도를 실제적으로 최소화한다.
+
+organizational_boundary:
+  description: >
+    기업이 온실가스 배출량을 "연결"할 사업활동의 범위를 정하는 단계.
+    지분 할당 접근법과 통제 접근법 중 하나를 선택해 전사적으로 일관되게 적용해야 한다.
+  approaches:
+    equity_share:
+      name: 지분 할당 접근법
+      rule: 기업은 사업활동에서 발생하는 배출량을 자사의 지분율(경제적 위험/보상 비율)만큼 산정한다.
+    control:
+      name: 통제 접근법
+      rule: 통제권을 가진 사업활동의 배출량 100%를 산정하고, 지분이 있어도 통제권이 없으면 0%로 산정한다.
+      sub_types:
+        financial_control:
+          name: 재무 통제
+          rule: >
+            사업활동의 재무/운영 방침을 정할 수 있는 힘(경제적 이익 획득 목적)을 가진 경우.
+            지분 50% 미만이어도 성립 가능. K-IFRS 연결회계 지배력(종속기업) 판정과 사실상
+            동일하며, 지분법 대상 관계기업은 제외된다.
+        operational_control:
+          name: 운영 통제
+          rule: 기업 또는 자회사가 운영방침을 도입·실시할 전적인 권한을 가진 경우. 통상 "운영 라이선스 보유" 시설.
+  double_counting_note: >
+    둘 이상 기업이 같은 공동 사업활동에 서로 다른 연결 접근법을 적용하면 이중 계산이
+    발생할 수 있다. 자발적 공개 보고에서는 연결 접근법을 명시하면 문제되지 않으나,
+    배출권 거래제 등 의무 보고 프로그램에서는 이중 계산 방지에 유의해야 한다.
+  boundary_case_patterns: # 2026-02 국내 사례집 기준 재무통제/운영통제 판단 패턴 (온보딩 질문지 설계용)
+    - case: 지분 100% 종속기업
+      financial_control: 포함
+    - case: 지분법 관계기업 (유의적 영향력, 지배력 없음)
+      financial_control: 제외
+    - case: 리스 자산 (사용권자산으로 회계처리)
+      financial_control: 포함
+      note: 자체 소유 자산과 동일하게 포함 (예 — 해운기업의 리스 선박)
+    - case: 렌탈업체가 고객에 대여한 장비 (대여사가 유형자산/사용권자산으로 인식)
+      financial_control: 포함
+    - case: 가맹점(프랜차이즈, 가맹사업자가 소유·임차)
+      financial_control: 제외
+      operational_control: 제외
+    - case: 임치계약 창고 (물류 위탁보관)
+      financial_control: 제외
+      operational_control: 제외
+      note: Scope 3 Cat.4(업스트림 운송·유통)에는 포함 가능
+    - case: EV 충전소 (에너지 재판매/중개업)
+      financial_control: 제외
+      operational_control: 제외
+      note: 충전설비 운영용 자체 전력 사용분은 Scope 2로 별도 포함
+    - case: 임차 통근버스 (K-IFRS 1116호상 자산 회계처리 + 운행 전권 보유)
+      financial_control: 포함
+      operational_control: 포함
+
+operational_boundary:
+  description: >
+    조직 경계가 정해진 사업활동에 대해, 배출을 직접/간접으로 나누고 Scope 1/2/3으로
+    분류하는 단계. CarbonGuard의 emission-engine scope1/scope2/scope3 태깅과 직접 대응.
+  scopes:
+    scope1:
+      name: 직접 온실가스 배출
+      rule: 기업이 소유·통제하는 배출원(보일러/용광로/차량/공정설비 등)에서 발생하는 배출.
+      activity_types: [고정연소, 이동연소, 공정배출, 탈루배출]
+      exclusions:
+        - 바이오매스 연소 직접 CO2 배출은 Scope 1에서 제외하고 별도 보고
+        - Kyoto Protocol 미대상 가스(CFCs, NOx 등)는 Scope 1 제외, 선택적 별도 보고
+      note: 자가발전 전력을 타사에 판매해도 발전으로 인한 Scope 1 배출은 상계/차감하지 않는다.
+    scope2:
+      name: 전력 간접 온실가스 배출
+      rule: 기업이 소비하는 구매 전력(또는 무상으로 조직 경계 내로 반입된 전력)의 생산 단계에서 발생하는 배출.
+      activity_types: [구매전력, 구매열]
+      td_loss_rule: >
+        송배전(T&D) 손실분 관련 배출은 송배전망을 소유·통제하는 기업(전력회사)이
+        Scope 2로 보고하며, 최종 소비자는 이를 Scope 2에 포함하지 않는다
+        (선택적으로 Scope 3 "송배전 손실 전력 발전" 카테고리에 보고 가능).
+        전력구매기업은 소비단이 아닌 발전단 배출계수(EFG)를 사용해야 한다.
+      dual_reporting_by_disclosure_standard: # 2026-02 국내 사례집이 정리한 공시기준별 차이 — 매우 중요
+        IFRS_S2: 지역기반(location-based) 총배출량이 필수, 시장기반(계약기반)은 정보이용자에게 도움될 경우 추가 공시.
+        ESRS_CSRD: 지역기반 및 시장기반 총배출량 둘 다 필수 (regulations/csrd.yaml에 반영).
+    scope3:
+      name: 기타 간접 온실가스 배출 (선택 보고)
+      rule: 기업 활동의 결과이지만 다른 주체가 소유·통제하는 배출원에서 발생하는 배출.
+      example_categories:
+        - 구매한 자재·연료의 추출/생산
+        - 구매 자재/제품/폐기물/직원 이동
+        - 임차자산·외주·프랜차이즈 (선택한 연결 접근법이 적용되지 않는 경우)
+        - 판매된 제품·서비스의 사용, 폐기
+      selection_guidance: >
+        Scope 1/2 대비 배출량 비중이 크거나, 리스크 노출에 기여하거나, 이해관계자가
+        중요하다고 판단하거나, 감축 여지가 있는 카테고리를 우선 선정한다.
+  minimum_reporting: Scope 1과 Scope 2는 반드시 각각 분리하여 산정·보고해야 한다. Scope 3은 선택.
+  leased_assets:
+    equity_or_financial_control: 재무회계상 완전소유자산으로 취급되는 임차자산(금융/자본리스)의 배출만 산정.
+    operational_control: 임차인이 직접 운영하는 임차자산의 배출만 산정 (운영리스는 일반적으로 제외).
+
+activity_data_maturity_types: # 2026-02 국내 사례집 Type 1/2/3 — SME 데이터 성숙도별 산정 접근법
+  type_1:
+    accuracy: 높음
+    unit: 개별 배출시설 단위
+    method: 검교정된 계량기 실측(요금청구서 등 증빙) × 배출계수
+  type_2:
+    accuracy: 중간
+    unit: 사업장 단위 (시설별 구분 없음)
+    method: 사업장 합산 계량 데이터(예 — 한전 계량기 전력 구매량) × 배출계수
+  type_3:
+    accuracy: 낮음 (보조 수단)
+    unit: 근사 추정
+    method: 구매금액·사용면적·주행거리 등 대리지표로 활동자료 추정 × 배출계수
+  guidance: 가능하면 Type 1/2 우선 사용, Type 3은 물리적 계측이 불가능한 경우의 보조 수단.
+
+base_year_recalculation:
+  description: >
+    인수·분할매각·합병, 계산방법론/배출계수 정확도 변경, 유의미한 오류 발견 시
+    기준 연도 배출량을 소급 재계산해야 시간 경과 비교의 일관성이 유지된다.
+  triggers:
+    - 기준 연도 배출량에 유의미한 영향을 미치는 조직 구조변화(인수/분할매각/외주화/내부화)
+    - 기준 연도 데이터에 유의미한 영향을 미치는 계산방법론 변경 또는 배출계수·활동자료 정확도 개선
+    - 유의미하거나 누적적으로 유의미한 오류 발견
+  non_triggers:
+    - 자체 성장/쇠퇴(생산량 증감, 제품 믹스 변화, 기존 사업장의 개소·폐쇄)
+    - 기준 연도 설정 이후에 존재하게 된 시설의 인수(그 시설의 과거 데이터만 있는 연도까지 소급)
+    - Scope 2/3로 이미 보고 중인 외주/내부화 (Scope 1↔Scope 3 간 이동이 유의미한 경우는 예외)
+  significance_threshold_note: >
+    표준 자체는 구체적인 "유의미성 임계치" 수치를 규정하지 않으며, 기업이 정책으로
+    정해 일관되게 적용하고 공개해야 한다. CarbonGuard가 과거 배출 기록 수정 UI를
+    제공할 경우, 이 임계치 정책을 사용자가 명시하도록 요구하고 근거를 changelog/
+    감사로그에 남겨야 한다(승인 게이트 ④).
+
+reporting_requirements:
+  required:
+    - 선택된 연결 접근법을 포함한 조직 경계 개요
+    - 선택된 운영 경계 개요 (Scope 3 포함 시 활동 유형 목록)
+    - 보고 기간
+    - 온실가스 거래(구매/판매/이전)와 분리된 Scope 1·Scope 2 총배출량
+    - Scope별 배출량 데이터
+    - 6대 온실가스(CO2, CH4, N2O, HFCs, PFCs, SF6)별 배출량 (metric ton, CO2eq ton)
+    - 기준 연도 및 재계산 정책·사유
+    - 배출량 계산/측정 방법론 및 계산 툴 참조
+    - 제외된 배출원·시설·사업활동
+    - 외부 검증 개요(해당 시 검증서)
+  optional:
+    - 신뢰 가능한 Scope 3 카테고리별 데이터
+    - 사업 단위/시설·국가·배출원 유형별 세분화 데이터
+    - 비율 지표(생산량당 배출량 등)
+    - 인벤토리 품질(불확도 원인·규모) 정보
+  double_counting_note: >
+    다른 시설/사업단위/기업의 인벤토리 연결에서 이미 Scope 1로 보고된 배출량을
+    Scope 2 또는 Scope 3 보고에 다시 포함시키지 않도록 주의해야 한다.
+
+appendix_a_purchased_electricity:
+  efg_vs_efc:
+    EFG: "발전단 배출계수 = 발전으로 인한 총 CO2 배출량 / 전력 발전량"
+    EFC: "소비단 배출계수 = 발전으로 인한 총 CO2 배출량 / 전력 소비량 (= EFG × (1 + 송배전손실/전력소비량))"
+    rule: >
+      GHG Protocol Corporate Standard는 Scope 2 산정 시 반드시 EFG(발전단 배출계수)를
+      사용하도록 요구한다. 한국의 GIR(온실가스종합정보센터) 계수가 발전단/소비단 중
+      어느 것인지 packages/ruleset/factors/kr-nga/*/electricity.json 등록 시 source
+      필드에 명시할 것.
+  own_generation_own_td: >
+    보고 기업이 발전과 송배전을 모두 소유·통제하며 구매 없이 자체 생산한 전력을 자체
+    송배전망으로 공급하는 경우(수직 통합), 송배전 손실 관련 배출은 이미 Scope 1에
+    산정되었으므로 Scope 2로 다시 보고하지 않는다 — 이중 계산 방지.
+
+applicability_to_carbon_guard: >
+  CarbonGuard는 현재(2026-08) 단일 사업장/단일 법인 기준 Scope 1(연료)·Scope 2(전력)
+  산정에 집중하고 있다(packages/emission-engine). 다수 사업장·자회사를 보유한 고객이
+  등장하면 organizational_boundary(지분 할당 vs 통제) 선택 로직과 boundary_case_patterns를
+  온보딩 질문지로 활용할 것. activity_data_maturity_types(Type1/2/3)는 data-collector의
+  OCR confidence 등급(승인 게이트 ⑥)과 매핑 검토. Scope 2 전력 배출계수를
+  ruleset/factors에 등록할 때 반드시 EFG(발전단) 기준인지 확인하고 source에 명시할 것
+  — 미확인 시 TODO로 남기고 값을 지어내지 않는다(root CLAUDE.md 금지 행동 ①).

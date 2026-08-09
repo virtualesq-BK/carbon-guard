@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-scope1-process/limestone-caco3",
+  "version": "2026-01",
+  "value": "TODO",
+  "unit": "tCO2/t",
+  "source": "",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "사용자 제공값 0.440 tCO2/t (석회석 하소, 시멘트·철강 플럭스용). 화학양론적 상수(CaCO3 -> CaO + CO2, 몰질량비 기반)라 정치적 개정 가능성은 낮으나, 이번 세션에서 MRR(EU 2018/2066) Annex VI 원문 대조는 하지 못함. verification: unverified-user-claim."
+}

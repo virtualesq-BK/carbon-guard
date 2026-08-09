@@ -1,0 +1,10 @@
+{
+  "factor_key": "kr-nga/electricity",
+  "version": "2026-01",
+  "value": 0.4173,
+  "unit": "tCO2e/MWh",
+  "source": "기후에너지환경부·국가 온실가스 통계 관리위원회, 2025-12-17 공표 '2023년도 전력배출계수'. 2차 출처(독립 언론 4곳) 교차 확인: 에너지신문(energy-news.co.kr/news/articleView.html?idxno=221107), 다음뉴스(v.daum.net/v/20251218123123295), CO2Korea(co2korea.com/news/articleView.html?idxno=2467), K-ESG(k-esg.org/esghub/esg_news_view?idx=4184). 1차 출처(GIR 홈페이지 gir.go.kr 게시글 원문)는 세션형 URL이라 이번 조회로 직접 열람하지 못함 — 대신 GIR 홈페이지(gir.go.kr, 메뉴ID 36 '국가·지역 온실가스 통계')에서 사람이 직접 확인 권장.",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "2023년도 전력배출계수(국가 평균, 일반 기후공시·ESG 보고서용). 이전 공표치(2025-03-31, 2020~2022년 평균)는 0.4541 tCO2eq/MWh였고 이번 값이 8.1% 낮음 — 2025년 12월부터 공표 주기가 3년→1년으로 단축되어 매년 갱신됨. ⚠ 미확인 사항: (1) 이 계수가 발전단(EFG)인지 소비단(EFC)인지 명시적으로 확인하지 못함 — GHG Protocol Scope 2는 EFG를 요구하므로(regulations/ghg-protocol.yaml의 appendix_a_purchased_electricity 참조) 반드시 사람이 GIR 원문에서 확인할 것. (2) 배출권거래제(K-ETS) 정산용 계수와는 별도 트랙(ETS는 할당 시점 계수를 그대로 유지)이므로 이 값을 ETS 정산에 쓰면 안 됨 — 이 값은 일반 공시·산정용. (3) factors(sample)/cbam-scope2-electricity/2026-01/south-korea.json에 있는 '2021년 국가고유 배출계수 0.4747 tCO2/MWh'와는 다른 값/다른 용도(그건 CBAM 제출용이 아니라고 명시된 별개 수치)이니 혼동 금지. verification: corroborated-secondary — factors/kr-nga/2026-01/electricity.json으로 승격 전 사람이 GIR 원문 게시글(gir.go.kr)에서 발전단/소비단 여부와 정확한 수치를 최종 대조 필요."
+}

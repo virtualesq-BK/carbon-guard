@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-scope1-process/dolomite",
+  "version": "2026-01",
+  "value": "TODO",
+  "unit": "tCO2/t",
+  "source": "",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "사용자 제공값 0.477 tCO2/t (백운석, CaCO3·MgCO3). 화학양론적 상수이나 MRR Annex VI 원문 대조는 하지 못함. verification: unverified-user-claim."
+}

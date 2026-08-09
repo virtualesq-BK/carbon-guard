@@ -1,0 +1,10 @@
+{
+  "factor_key": "kr-nga/electricity",
+  "version": "2026-01",
+  "value": "TODO",
+  "unit": "tCO2e/MWh",
+  "source": "",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "TODO: 온실가스종합정보센터(GIR) 2026년 전력 배출계수 확정치로 교체 필요. reg-watcher가 출처 URL과 함께 제안하면 사람이 검토 후 반영한다. 확인되지 않은 숫자를 임의로 채우지 말 것 (root CLAUDE.md 금지행동 ①)."
+}

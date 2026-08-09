@@ -1,0 +1,123 @@
+# EU CBAM (Carbon Border Adjustment Mechanism)
+regulation_key: cbam
+jurisdiction: EU
+version: "consolidated text as of 2025-10-20 (Regulation (EU) 2023/956, amended by Regulation (EU) 2025/2083 'Omnibus' package)"
+effective_from: "2023-10-01" # 전환기간(transitional period) 시작일. 확정기간은 2026-01-01부터(제32조).
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02023R0956-20251020"
+status: draft # CN코드는 EUR-Lex 원문 대조로 검증되었으나, 배출계수/기본값 등 수치는 여전히 TODO이므로 draft 유지.
+covered_sectors:
+  - key: aluminium
+    cn_codes:
+      - "7601"
+      - "7603"
+      - "7604"
+      - "7605"
+      - "7606"
+      - "7607"
+      - "7608"
+      - "76090000"
+      - "7610"
+      - "76110000"
+      - "7612"
+      - "76130000"
+      - "7614"
+      - "7616"
+    excluded_cn_codes: ["7602", "7615"]
+    ghg: [carbon_dioxide, perfluorocarbons] # PFCs는 1차 전해제련 공정에서만 실제 발생
+    source: "EUR-Lex CELEX:02023R0956-20251020 Annex I, 직접 원문 대조 완료 2026-08-05"
+  - key: iron_and_steel
+    cn_codes:
+      - "72"
+      - "26011200"
+      - "7301"
+      - "7302"
+      - "730300"
+      - "7304"
+      - "7305"
+      - "7306"
+      - "7307"
+      - "7308"
+      - "730900"
+      - "7310"
+      - "731100"
+      - "7318"
+      - "7326"
+    excluded_cn_codes:
+      - "72022"
+      - "72023000"
+      - "72025000"
+      - "72027000"
+      - "72028000"
+      - "72029100"
+      - "72029200"
+      - "72029300"
+      - "72029910"
+      - "72029930"
+      - "72029980"
+      - "7204"
+    note: >
+      순수 페로망간(720211/19)·페로크롬(720241/49)·페로니켈(720260)은 제외 목록에
+      없으므로 Chapter 72의 나머지로서 CBAM 대상. "실리코(silico-)" 계열 변종과
+      소수 페로합금만 제외됨.
+    ghg: [carbon_dioxide]
+    source: "EUR-Lex CELEX:02023R0956-20251020 Annex I, 직접 원문 대조 완료 2026-08-05"
+  - key: cement
+    cn_codes:
+      - "25231000"
+      - "25232100"
+      - "25232900"
+      - "25233000"
+      - "25239000"
+      - "ex 25070080"
+    ghg: [carbon_dioxide]
+    source: "EUR-Lex CELEX:02023R0956-20251020 Annex I, 직접 원문 대조 완료 2026-08-05"
+  - key: fertilisers
+    cn_codes:
+      - "28080000"
+      - "2814"
+      - "28342100"
+      - "3102"
+      - "3105"
+    excluded_cn_codes: ["31056000"]
+    ghg: [carbon_dioxide, nitrous_oxide]
+    note: "질산 생산의 N2O는 계산기반이 아니라 측정기반(CEMS/TMS) 방법론이 필수 (해설서 기준, EUR-Lex 조문 대조는 아직 안 됨)."
+    source: "EUR-Lex CELEX:02023R0956-20251020 Annex I, 직접 원문 대조 완료 2026-08-05"
+  - key: hydrogen
+    cn_codes:
+      - "28041000"
+    ghg: [carbon_dioxide]
+    note: "전구물질이 없는 단순제품(simple product). CBAM 적용 수소는 순수 수소 또는 암모니아 생산용 수소-질소 혼합물만 해당."
+    source: "EUR-Lex CELEX:02023R0956-20251020 Annex I, 직접 원문 대조 완료 2026-08-05"
+  - key: electricity
+    cn_codes:
+      - "27160000"
+    ghg: [carbon_dioxide]
+    source: "EUR-Lex CELEX:02023R0956-20251020 Annex I, 직접 원문 대조 완료 2026-08-05"
+procedural_requirements:
+  transitional_period: "2023-10-01 ~ 2025-12-31"
+  definitive_period_start: "2026-01-01" # 제32조
+  certificate_annual_deadline:
+    value: "TODO — 자료 상충, 사람 재확인 필요"
+    note: >
+      법률 번역서 v3.0(구버전) 원문은 "매년 5월 31일"이나, 2차 자료 기준
+      Regulation (EU) 2025/2083("Omnibus")가 확정기간 마감을 수입 다음 해
+      9월 30일로 연장했다는 정보가 있음(2026년 수입분 최초 마감 2027-09-30 추정).
+      EUR-Lex 원문의 정확한 개정 조문으로 직접 대조하지 못해 TODO 유지.
+  buy_back_request_deadline: "매년 6월 30일 (인증서 제출 연도 기준, 개정 여부 미확인)"
+  authorised_declarant_requirements:
+    - "최근 5년간 관세법·조세·시장남용규칙·CBAM규정 중대 위반/반복위반 없음"
+    - "의무 이행을 위한 재정·운영 능력 입증"
+    - "신청 회원국 소재"
+    - "EORI 번호 보유"
+  verification_requirement: "제8조 — 공인 검증인(부속서 Ⅵ 검증원칙, 이행규정(EU) 2018/2067에 따라 인정된 자)에 의한 검증 필수"
+  penalty_basis: "미제출 인증서 1개당 EU ETS 초과배출 과징금(지침 2003/87/EC 제16조③④)과 동일 금액, 매년 인플레이션 연동"
+  default_values:
+    free_use_until: "2024-07-31"
+    complex_goods_20pct_cap_period: "2024-07-01 ~ 2025-12-31" # 2026-08-05 웹 조회로 정정 (기존 "2024-08-01" 아님)
+    definitive_period_methodology: "Implementing Regulation (EU) 2025/2621 (국가·CN코드별 기본값, 단계적 마크업 2026:+10%/2027:+20%/2028:+30% — EUR-Lex 원문 CELEX 직접 대조 미완료, TODO)"
+notes: >
+  covered_sectors의 CN코드는 EUR-Lex consolidated text 원문을 직접 대조하여
+  검증됨(2026-08-05). procedural_requirements 중 certificate_annual_deadline과
+  default_values.definitive_period_methodology는 2차 출처 기반이라 TODO 유지.
+  factors/에 들어갈 배출계수(클링커 기본값, 전력 배출계수 등)는 별도 검증 후
+  채운다 (root CLAUDE.md 금지 행동 ①).

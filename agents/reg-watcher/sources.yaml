@@ -1,0 +1,40 @@
+# reg-watcher가 조회하는 규제/배출계수 원문 소스 목록.
+# verified: false인 항목은 사람이 실제 URL이 최신·정확한지 확인 전까지
+# reg-watcher 실행 시 경고와 함께 스킵된다 (없는 URL을 근거로 제시하지 않기 위함).
+# 사람이 URL을 확인한 뒤 verified: true로 바꿔야 실제 조회 대상이 된다.
+sources:
+  - key: cbam
+    kind: regulation
+    url: https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en
+    description: EU 집행위 CBAM 공식 안내 페이지
+    verified: false
+
+  - key: cbam
+    kind: regulation
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R0956
+    description: EUR-Lex CBAM 규정 원문(Regulation (EU) 2023/956)
+    verified: false
+
+  - key: csrd
+    kind: regulation
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2464
+    description: EUR-Lex CSRD 지침 원문(Directive (EU) 2022/2464)
+    verified: false
+
+  - key: cca
+    kind: regulation
+    url: https://www.congress.gov/
+    description: 美 의회 CCA 법안 조회(정확한 법안 번호로 심층 링크 확정 필요)
+    verified: false
+
+  - key: kr-nga/electricity
+    kind: factor
+    url: https://www.gir.go.kr
+    description: 온실가스종합정보센터(GIR) 국가 배출계수 공개 자료
+    verified: false
+
+  - key: cbam
+    kind: regulation
+    url: https://www.law.go.kr
+    description: 법제처 국가법령정보센터(국내 대응 법령 확인용)
+    verified: false

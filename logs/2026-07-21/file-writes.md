@@ -1,0 +1,14 @@
+- 2026-07-21T18:06:52.961Z — Write → c:\Users\82103\carbon-guard\apps\web\tailwind.config.ts
+- 2026-07-21T18:06:59.604Z — Edit → c:\Users\82103\carbon-guard\apps\web\app\layout.tsx
+- 2026-07-21T18:07:29.067Z — Write → c:\Users\82103\carbon-guard\apps\web\app\page.tsx
+- 2026-07-21T18:13:20.880Z — Write → c:\Users\82103\carbon-guard\vercel.json
+- 2026-07-21T18:14:40.014Z — Write → c:\Users\82103\carbon-guard\vercel.json
+- 2026-07-21T18:27:31.696Z — Write → c:\Users\82103\carbon-guard\apps\web\app\api\demo\calculate\route.ts
+- 2026-07-21T18:27:49.149Z — Write → c:\Users\82103\carbon-guard\apps\web\app\demo\page.tsx
+- 2026-07-21T18:27:58.292Z — Edit → c:\Users\82103\carbon-guard\apps\web\app\page.tsx
+- 2026-07-21T18:28:05.451Z — Edit → c:\Users\82103\carbon-guard\apps\web\app\page.tsx
+- 2026-07-21T18:51:15.294Z — Edit → c:\Users\82103\carbon-guard\apps\web\next.config.mjs
+- 2026-07-21T18:57:48.859Z — Edit → c:\Users\82103\carbon-guard\apps\web\app\api\demo\calculate\route.ts
+- 2026-07-21T18:59:07.104Z — Edit → c:\Users\82103\carbon-guard\apps\web\app\api\demo\calculate\route.ts
+- 2026-07-21T18:59:12.940Z — Edit → c:\Users\82103\carbon-guard\apps\web\app\api\demo\calculate\route.ts
+- 2026-07-21T18:59:19.327Z — Edit → c:\Users\82103\carbon-guard\apps\web\app\api\demo\calculate\route.ts

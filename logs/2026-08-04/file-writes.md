@@ -1,0 +1,16 @@
+- 2026-08-04T16:51:13.449Z — Write → C:\Users\82103\carbon-guard\packages\ruleset\proposals\2026-08-05-cbam-aluminum-guide.md
+- 2026-08-04T17:07:53.810Z — Edit → C:\Users\82103\carbon-guard\apps\web\lib\ai.ts
+- 2026-08-04T17:08:03.335Z — Edit → C:\Users\82103\carbon-guard\apps\web\lib\ai.ts
+- 2026-08-04T17:08:15.380Z — Edit → C:\Users\82103\carbon-guard\apps\web\lib\ai.ts
+- 2026-08-04T17:16:50.100Z — Write → C:\Users\82103\carbon-guard\packages\ruleset\proposals\2026-08-05-scope12-organizational-boundary-casebook.md
+- 2026-08-04T17:17:32.024Z — Write → C:\Users\82103\carbon-guard\packages\ruleset\proposals\2026-08-05-cbam-steel-guide.md
+- 2026-08-04T17:18:30.119Z — Write → C:\Users\82103\carbon-guard\packages\ruleset\proposals\2026-08-05-cbam-cement-fertiliser-hydrogen-guide.md
+- 2026-08-04T17:19:36.784Z — Write → C:\Users\82103\carbon-guard\packages\ruleset\proposals\2026-08-05-cbam-legal-translation-v3.md
+- 2026-08-04T18:01:19.501Z — Edit → C:\Users\82103\carbon-guard\packages\ruleset\proposals\2026-08-05-cbam-aluminum-guide.md
+- 2026-08-04T18:02:15.750Z — Edit → C:\Users\82103\carbon-guard\packages\ruleset\proposals\2026-08-05-cbam-steel-guide.md
+- 2026-08-04T18:02:45.471Z — Edit → C:\Users\82103\carbon-guard\packages\ruleset\proposals\2026-08-05-cbam-steel-guide.md
+- 2026-08-04T18:03:04.131Z — Edit → C:\Users\82103\carbon-guard\packages\ruleset\proposals\2026-08-05-cbam-cement-fertiliser-hydrogen-guide.md
+- 2026-08-04T18:03:19.906Z — Edit → C:\Users\82103\carbon-guard\packages\ruleset\proposals\2026-08-05-cbam-cement-fertiliser-hydrogen-guide.md
+- 2026-08-04T18:03:26.652Z — Edit → C:\Users\82103\carbon-guard\packages\ruleset\proposals\2026-08-05-cbam-cement-fertiliser-hydrogen-guide.md
+- 2026-08-04T18:31:37.241Z — Write → C:\Users\82103\AppData\Local\Temp\claude\C--Users-82103-carbon-guard\06b9f08b-8092-43eb-909b-1d3b20536a26\scratchpad\smoke.mjs
+- 2026-08-04T18:32:01.849Z — Write → C:\Users\82103\carbon-guard\apps\web\_smoke.mjs

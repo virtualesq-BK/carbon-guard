@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-scope1-process/pfc-cf4-gwp",
+  "version": "AR5-100yr",
+  "value": 6630,
+  "unit": "tCO2e/t",
+  "source": "IPCC Fifth Assessment Report (AR5, 2013), Chapter 8, Table 8.A.1 — GWP-100 for CF4. 2차 확인: EPA 미국 온실가스 인벤토리 부록(같은 값 인용). UNFCCC는 AR5 GWP 값 사용을 요구함. https://www.ipcc.ch/report/ar5/wg1/",
+  "effective_from": "2013-01-01",
+  "effective_to": null,
+  "notes": "알루미늄 홀-에루 전해공정 양극효과(anode effect)에서 발생하는 CF4의 CO2 환산계수(GWP). 정책 수치가 아니라 IPCC 과학 평가값이라 개정 빈도가 낮음(AR5→AR6 개정 시에만 변경). MRR(EU 2018/2066)이 실제로 AR5를 참조하는지는 원문 대조 필요. verification: corroborated-secondary — 정책 규정(MRR) 원문에서 AR 버전 지정 여부는 미확인이나 수치 자체의 과학적 출처는 신뢰도 높음."
+}

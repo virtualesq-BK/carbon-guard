@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-benchmark-steel/hrc-bf-bof",
+  "version": "2026",
+  "value": 1.370,
+  "unit": "tCO2e/t",
+  "source": "IR (EU) 2025/2620 (2025-12-16 채택, 무상할당 조정 벤치마크) — 2차 출처(EUROMETAL, CBAM Guide) 교차 확인. 1차 EUR-Lex Annex 원문은 미열람: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202502620",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "열연코일(HRC) BF/BOF 경로 벤치마크. 2025-11 유출 초안 시 1.530이었으나 최종 확정치는 1.370으로 하향. 이 값은 emission-engine의 활동량×계수 계산용이 아니라 CBAM 무상할당 조정(free allocation adjustment) 산식에 쓰이는 벤치마크이므로 emission-engine에서 그대로 재사용하지 말 것. verification: corroborated-secondary — factors/로 승격 전 사람이 IR 2025/2620 Annex 원문과 최종 대조 필요."
+}

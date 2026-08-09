@@ -1,0 +1,30 @@
+# US CCA (Clean Competition Act) — 아직 미제정 법안, 시뮬레이터용 가정치 포함
+regulation_key: cca
+jurisdiction: US
+version: "TODO"
+effective_from: "TODO"
+source_url: "" # TODO: congress.gov 등 공식 법안 URL
+status: draft # draft | approved
+tax_model:
+  base_rate_usd_per_ton: "TODO" # 공식 확정치. reg-watcher가 출처와 함께 제안 → 사람 승인 전까지 TODO
+  inflation_adjustment: "TODO" # 연동 방식(예: CPI 연동) 확정 후 채움
+  base_year: "TODO"
+simulation_assumptions:
+  # 공식 법안이 아직 확정되지 않은 상태에서, 사용자에게 "대략적인 시뮬레이션"을
+  # 보여주기 위한 참고용 가정치. packages/report-templates/src/cca-tax.ts의
+  # CCA_SIMULATION_CONFIG와 반드시 동기화한다. 이 값이 바뀌면 이 파일과
+  # cca-tax.ts를 함께 수정하고 changelog.md에 근거를 남긴다.
+  base_rate_usd_per_ton: 55 # 공개적으로 자주 인용되는 CCA 발의안 기준 예시값(2025)
+  base_year: 2025
+  annual_inflation_rate: 0.025
+  disclaimer: >
+    이 값은 확정된 법령이 아니며 사용자 화면에는 반드시 "시뮬레이션(추정치)"로
+    표기해야 한다. tax_model이 확정되면 simulation_assumptions는 제거하고
+    tax_model 값을 사용하도록 코드를 변경한다.
+covered_sectors:
+  - TODO
+notes: >
+  CCA는 아직 입법 전 단계이므로 tax_model의 공식 수치는 reg-watcher가 확인한
+  출처 없이는 채우지 않는다. compliance-generator의 세액 시뮬레이터는
+  simulation_assumptions의 가정치만 사용하고, 결과에는 항상
+  "SIMULATION ONLY" 표시를 남긴다 (Phase 5).

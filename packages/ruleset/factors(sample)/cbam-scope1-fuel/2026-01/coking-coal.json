@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-scope1-fuel/coking-coal",
+  "version": "2026-01",
+  "value": "TODO",
+  "unit": "tCO2/TJ",
+  "source": "",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "사용자 제공값 94.6 tCO2/TJ (NCV 28.2 TJ/Gg). MRR(EU 2018/2066) Annex VI 원문 대조 실패 — Annex 미도달. verification: unverified-user-claim."
+}

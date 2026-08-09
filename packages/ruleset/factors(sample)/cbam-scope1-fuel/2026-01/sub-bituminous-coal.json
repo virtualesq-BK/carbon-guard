@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-scope1-fuel/sub-bituminous-coal",
+  "version": "2026-01",
+  "value": "TODO",
+  "unit": "tCO2/TJ",
+  "source": "",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "사용자 제공값 96.1 tCO2/TJ (아역청탄). 사용자 스스로 '미검증'으로 표기. MRR Annex VI 원문 대조 필요. verification: unverified-user-claim."
+}

@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-scope1-process/pfc-c2f6-gwp",
+  "version": "AR5-100yr",
+  "value": 11100,
+  "unit": "tCO2e/t",
+  "source": "IPCC Fifth Assessment Report (AR5, 2013), Chapter 8, Table 8.A.1 — GWP-100 for C2F6. 2차 확인: EPA 미국 온실가스 인벤토리 부록(같은 값 인용). https://www.ipcc.ch/report/ar5/wg1/",
+  "effective_from": "2013-01-01",
+  "effective_to": null,
+  "notes": "알루미늄 홀-에루 전해공정 양극효과에서 발생하는 C2F6의 CO2 환산계수(GWP). verification: corroborated-secondary — 정책 규정(MRR) 원문에서 AR 버전 지정 여부는 미확인이나 수치 자체의 과학적 출처는 신뢰도 높음."
+}

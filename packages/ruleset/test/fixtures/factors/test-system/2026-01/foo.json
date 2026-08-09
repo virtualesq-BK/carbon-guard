@@ -1,0 +1,9 @@
+{
+  "factor_key": "test-system/foo",
+  "version": "2026-01",
+  "value": "TODO",
+  "unit": "tCO2e/unit",
+  "source": "",
+  "effective_from": "2026-01-01",
+  "effective_to": null
+}

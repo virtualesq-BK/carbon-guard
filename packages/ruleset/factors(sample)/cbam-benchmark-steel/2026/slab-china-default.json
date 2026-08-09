@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-benchmark-steel/slab-china-default",
+  "version": "2026",
+  "value": 3.167,
+  "unit": "tCO2e/t",
+  "source": "IR (EU) 2025/2621 (확정단계 기본값, 2025-12-31 공표·2026-01-01 시행) — 2차 출처(EUROMETAL, CBAM Guide) 교차 확인. 1차 EUR-Lex Annex 원문은 미열람(응답 크기 제한으로 조회 실패): https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202502621",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "중국산 철강 슬라브(steel slab) 기본값. BF/BOF 벤치마크(1.370, cbam-benchmark-steel/hrc-bf-bof)의 약 2.3배로, 기본값 대신 실측 데이터를 제출할 유인이 큰 대표 사례. 2025-11 유출 초안 시 1.75였으나 최종 확정치는 3.167로 상향되었다고 2차 출처가 보도. 이는 (실측 데이터 없을 때 적용되는) '기본값'이며 위 hrc-* 파일들의 '무상할당 조정 벤치마크'와는 법적 성격이 다르므로 혼용 금지. verification: corroborated-secondary — factors/로 승격 전 사람이 IR 2025/2621 Annex 원문과 최종 대조 필요."
+}

@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-scope1-fuel/lignite",
+  "version": "2026-01",
+  "value": "TODO",
+  "unit": "tCO2/TJ",
+  "source": "",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "사용자 제공값 101.0 tCO2/TJ (NCV 11.9 TJ/Gg — 사용자 스스로 표기 순서 불명확하다고 밝힘, IPCC Vol.2 Table 1.2 재확인 필요라 언급). MRR Annex VI 원문 대조 실패. verification: unverified-user-claim."
+}

@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-scope1-fuel/residual-fuel-oil",
+  "version": "2026-01",
+  "value": "TODO",
+  "unit": "tCO2/TJ",
+  "source": "",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "사용자 제공값 77.4 tCO2/TJ (NCV 40.4 TJ/Gg, 중유). MRR Annex VI 원문 대조 실패. verification: unverified-user-claim."
+}

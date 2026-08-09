@@ -1,0 +1,9 @@
+{
+  "factor_key": "test-system/foo",
+  "version": "2025-01",
+  "value": 0.5,
+  "unit": "tCO2e/MWh",
+  "source": "https://example.test/2025-source",
+  "effective_from": "2025-01-01",
+  "effective_to": null
+}

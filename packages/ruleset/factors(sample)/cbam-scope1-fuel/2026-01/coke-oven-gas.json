@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-scope1-fuel/coke-oven-gas",
+  "version": "2026-01",
+  "value": "TODO",
+  "unit": "tCO2/TJ",
+  "source": "",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "사용자 제공값 44.4 tCO2/TJ (COG). 철강 사업장 부생가스 밸런스 배분 이슈가 있어 특히 원문 대조가 중요. 사용자 스스로 '미검증'으로 표기. verification: unverified-user-claim."
+}

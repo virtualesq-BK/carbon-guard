@@ -1,0 +1,23 @@
+# EU CSRD (Corporate Sustainability Reporting Directive) / ESRS
+regulation_key: csrd
+jurisdiction: EU
+version: "TODO"
+effective_from: "TODO"
+source_url: "" # TODO: EUR-Lex 공식 지침 URL
+status: draft # draft | approved
+esrs_standards: # European Sustainability Reporting Standards
+  - TODO
+scope2_reporting: # 2026-02 국내 "글로벌 공시기준 Scope1,2 조직경계·배출량 산정 사례집" 기준 확인된 요건
+  requirement: >
+    ESRS(CSRD)는 IFRS S2와 달리 Scope 2를 지역기반(location-based) 총배출량과
+    시장기반(market-based) 총배출량 "둘 다" 공시해야 한다 — 지역기반만 필수인
+    IFRS S2보다 요구 수준이 높음. 시장기반 배출량은 구매 전력의 실제 계약(PPA 등)
+    기반 배출계수를 사용하여 산정한다.
+  source: "기후에너지환경부·한국환경산업기술원, 「글로벌 공시기준에 따른 온실가스 Scope 1,2 배출량 보고를 위한 조직경계 설정·배출량 산정 사례집」, 2026-02 발간, PART II 2)"
+reporting_requirements:
+  - name: TODO
+    description: "TODO: 사람 검토 후 채울 것."
+notes: >
+  Phase 1 스캐폴딩 placeholder. scope2_reporting 항목만 2026-08-05 사용자 제공
+  자료로 확인되어 추가됨. 나머지(esrs_standards, reporting_requirements)는
+  reg-watcher 제안 → 사람 승인 후 반영 대기.

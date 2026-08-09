@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-benchmark-steel/hrc-dri-eaf",
+  "version": "2026",
+  "value": 0.481,
+  "unit": "tCO2e/t",
+  "source": "IR (EU) 2025/2620 (2025-12-16 채택, 무상할당 조정 벤치마크) — 2차 출처(EUROMETAL, CBAM Guide) 교차 확인. 1차 EUR-Lex Annex 원문은 미열람: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202502620",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "열연코일(HRC) DRI/EAF 경로 벤치마크. 2025-11 유출 초안 시 1.033이었으나 최종 확정치는 0.481로 하향. emission-engine 계산용이 아닌 무상할당 조정 벤치마크. verification: corroborated-secondary — factors/로 승격 전 사람이 IR 2025/2620 Annex 원문과 최종 대조 필요."
+}

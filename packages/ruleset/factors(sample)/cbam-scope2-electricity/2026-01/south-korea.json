@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-scope2-electricity/south-korea",
+  "version": "2026-01",
+  "value": "TODO",
+  "unit": "tCO2/MWh",
+  "source": "",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "IR (EU) 2025/2621 Annex II에 국가별 전력 배출계수가 있다고 알려져 있으나(2026-07-24 WebSearch로 규정 실존은 확인), 원문(EUR-Lex, 10MB 응답 크기 제한으로 조회 실패)에서 한국 수치를 확인하지 못함. 한국 국내 공표 소비단 계수 0.4747 tCO2/MWh(2021년 국가고유 배출계수)는 CBAM 제출용 공식값이 아니므로 대체 사용 금지 — 절대 이 값을 그대로 쓰지 말 것. verification: unverified-user-claim."
+}

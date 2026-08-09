@@ -1,0 +1,24 @@
+{
+  "name": "carbon-guard",
+  "private": true,
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm --filter web dev",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "agent:reg-watch": "pnpm --filter reg-watcher start",
+    "agent:data-collect": "pnpm --filter data-collector start",
+    "agent:compliance-generate": "pnpm --filter compliance-generator start",
+    "agent:compliance-evaluate": "pnpm --filter compliance-evaluator start",
+    "harness:review": "pnpm --filter harness-review start"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "tsx": "^4.16.0"
+  }
+}

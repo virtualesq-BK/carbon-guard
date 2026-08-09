@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-scope2-electricity/china-india-reference",
+  "version": "2026-01",
+  "value": "TODO",
+  "unit": "tCO2/MWh",
+  "source": "",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "사용자 제공 참고치 '약 0.7' (석탄 중심 그리드). 구체적 데이터셋 인용 없이 대략치로 제시됨. 실제 반영 전 IR 2025/2621 Annex II 원문 대조 필요. verification: unverified-user-claim (참고 범위치, 공식 인용 아님)."
+}

@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-scope1-fuel/blast-furnace-gas",
+  "version": "2026-01",
+  "value": "TODO",
+  "unit": "tCO2/TJ",
+  "source": "",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "사용자 제공값 260.0 tCO2/TJ (BFG). 부생가스 내부거래(수입·수출) 배분이 철강 CBAM 산정의 최대 난제 — 가스 밸런스 시트 구축 필요. 사용자 스스로 '미검증'으로 표기. verification: unverified-user-claim."
+}

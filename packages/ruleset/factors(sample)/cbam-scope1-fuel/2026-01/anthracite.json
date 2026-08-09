@@ -1,0 +1,10 @@
+{
+  "factor_key": "cbam-scope1-fuel/anthracite",
+  "version": "2026-01",
+  "value": "TODO",
+  "unit": "tCO2/TJ",
+  "source": "",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "notes": "사용자 제공값 98.3 tCO2/TJ (NCV 26.7 TJ/Gg), 근거로 EU ETS MRR(EU 2018/2066) Annex VI Table 1 / IPCC 2006 기본값 지목. 2026-07-24 세션에서 EUR-Lex 통합본(eli/reg_impl/2018/2066/2025-05-27/eng) 조회 시도했으나 응답이 Article 28에서 잘려 Annex VI 미도달 — 원문 대조 실패. verification: unverified-user-claim."
+}
